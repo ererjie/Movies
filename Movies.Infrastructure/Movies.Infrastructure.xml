@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="P:Movies.Infrastructure.AppConfig.AesKey">
+            <summary>
+            Aes密钥
+            </summary>
+        </member>
+        <member name="P:Movies.Infrastructure.AppConfig.DbConn">
+            <summary>
+            数据库链接字符串
+            </summary>
+        </member>
+        <member name="M:Movies.Infrastructure.Tools.Encrypt(System.String,System.String)">
+            <summary>
+            AES加密
+            </summary>
+            <param name="str">需要加密的字符串</param>
+            <param name="key">32位密钥</param>
+            <returns>加密后的字符串</returns>
+        </member>
+        <member name="M:Movies.Infrastructure.Tools.Decrypt(System.String,System.String)">
+            <summary>
+            aes解密
+            </summary>
+            <param name="decryptStr">密文</param>
+            <param name="key">密钥</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

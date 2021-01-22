@@ -1,0 +1,930 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies.Domin</name>
+    </assembly>
+    <members>
+        <member name="T:Movies.Domin.Dto.GetMoviesAccountDto">
+            <summary>
+            个人信息详情
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.Account">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.CreateTime">
+            <summary>
+            账户创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.EditTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.LastLoginTime">
+            <summary>
+            最后登陆时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.IsDel">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountDto.DelTime">
+            <summary>
+            删除时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountListDto.Account">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountListDto.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountListDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountListDto.CreateTime">
+            <summary>
+            账户创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountListDto.EditTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesAccountListDto.LastLoginTime">
+            <summary>
+            最后登陆时间
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Dto.MoviesAccountListFormModel">
+            <summary>
+            搜索字段
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesAccountListFormModel.Account">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesAccountListFormModel.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesAccountListFormModel.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesAccountListFormModel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesAccountListFormModel.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesDto.MoviesGroupId">
+            <summary>
+            影视分组Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesDto.MoviesName">
+            <summary>
+            电影/电视剧名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesDto.Image">
+            <summary>
+            头图
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesDto.Url">
+            <summary>
+            电影路径
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesDto.CreamTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Dto.GetMoviesDto.Get(System.String,Movies.Domin.Interface.IMoviesRepository)">
+            <summary>
+            影视信息详情
+            </summary>
+            <param name="id">影视信息id</param>
+            <param name="moviesRelatedRepository"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesGroupDto.Id">
+            <summary>
+            影视分组id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesGroupDto.MoviesGroupName">
+            <summary>
+            影视分组名称
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Dto.GetMoviesGroupDto.Get(Movies.Domin.Interface.IMoviesGroupRepository,System.String)">
+            <summary>
+            分组详情
+            </summary>
+            <param name="moviesGroupRepository"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesGroupListDto.MoviesGroupName">
+            <summary>
+            影视分组名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesGroupFormModel.MoviesGroupName">
+            <summary>
+             影视分组名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesGroupFormModel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesGroupFormModel.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesListDto.Id">
+            <summary>
+            影视信息id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesListDto.MoviesGroupId">
+            <summary>
+            影视分组Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesListDto.MoviesName">
+            <summary>
+            电影/电视剧名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesListDto.Image">
+            <summary>
+            头图
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesListDto.Url">
+            <summary>
+            电影路径
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.GetMoviesListDto.CreamTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesRelatedFormModel.MoviesName">
+            <summary>
+            电影/电视剧名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesRelatedFormModel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Dto.MoviesRelatedFormModel.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Interface.IMoviesAccountRepository">
+            <summary>
+            个人中心接口
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesAccountRepository.GetmoviesAccount(System.String)">
+            <summary>
+            根据用户的得到用户信息
+            </summary>
+            <param name="id">用户信息id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesAccountRepository.Add(Movies.Domin.AdminAccount)">
+            <summary>
+            添加
+            </summary>
+            <param name="adminAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesAccountRepository.Edit(Movies.Domin.AdminAccount)">
+            <summary>
+            更新
+            </summary>
+            <param name="adminAccount"></param>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesAccountRepository.SaveChanges">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesAccountRepository.GetQueryable">
+            <summary>
+            获取IQueryable方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesAccountRepository.GetList(System.Linq.Expressions.Expression{System.Func{Movies.Domin.AdminAccount,System.Boolean}})">
+            <summary>
+            获取列表
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesGroupRepository.Add(Movies.Domin.MoviesGroup)">
+            <summary>
+            添加
+            </summary>
+            <param name="moviesGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesGroupRepository.Edit(Movies.Domin.MoviesGroup)">
+            <summary>
+            更新
+            </summary>
+            <param name="moviesGroup"></param>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesGroupRepository.SaveChanges">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesGroupRepository.GetQueryable">
+            <summary>
+            获取IQueryable方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesGroupRepository.GetList(System.Linq.Expressions.Expression{System.Func{Movies.Domin.MoviesGroup,System.Boolean}})">
+            <summary>
+            获取列表
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesRepository.Add(Movies.Domin.Movies)">
+            <summary>
+            添加
+            </summary>
+            <param name="movies"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesRepository.Edit(Movies.Domin.Movies)">
+            <summary>
+            更新
+            </summary>
+            <param name="movies"></param>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesRepository.SaveChanges">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesRepository.GetQueryable">
+            <summary>
+            获取IQueryable方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Interface.IMoviesRepository.GetList(System.Linq.Expressions.Expression{System.Func{Movies.Domin.Movies,System.Boolean}})">
+            <summary>
+            获取列表
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Movies.Domin.AdminAccount">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.Account">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.CreateTime">
+            <summary>
+            账户创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.EditTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.LastLoginTime">
+            <summary>
+            最后登陆时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.IsDel">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.AdminAccount.DelTime">
+            <summary>
+            删除时间
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.AdminAccount.RegisterAdd(Movies.Domin.Param.MoviesAccountParam,Movies.Domin.Interface.IMoviesAccountRepository)">
+            <summary>
+            注册添加
+            </summary>
+            <param name="param">前端传参</param>
+            <param name="moviesAccountRepository">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.AdminAccount.RegisterEdit(Movies.Domin.Param.MoviesAccountParam)">
+            <summary>
+            更新个人信息
+            </summary>
+            <param name="param">前端参数</param>
+        </member>
+        <member name="M:Movies.Domin.AdminAccount.GetCredion(System.String)">
+            <summary>
+             获取登录凭证
+            </summary>
+            <param name="id">个人中心id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.AdminAccount.Del(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Movies.Domin.Movies">
+            <summary>
+            影视相关信息
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.Name">
+            <summary>
+            电影/电视剧名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.Cover">
+            <summary>
+            主图
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.IsDel">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.DelTime">
+            <summary>
+            删除时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.Douban">
+            <summary>
+            豆瓣评分
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.ReleaseYear">
+            <summary>
+            上映年
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.ReleaseMonth">
+            <summary>
+            上映月
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.ReleaseDay">
+            <summary>
+            上映日
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.ReleaseTime">
+            <summary>
+            上映时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.AreaName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.Sort">
+            <summary>
+            序列
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.IsRecommend">
+            <summary>
+            是否推荐
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.MoviesAndGroup">
+            <summary>
+            分组和影视信息关系表
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.MoviesIntroduction">
+            <summary>
+            影视简介表
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.MoviesDramaSeries">
+            <summary>
+            剧集
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Movies.MoviesAndLine">
+            <summary>
+            影视和线路表
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.Movies.Add(Movies.Domin.Param.MoviesParam,Movies.Domin.Interface.IMoviesRepository)">
+            <summary>
+            添加
+            </summary>
+            <param name="param"></param>
+            <param name="moviesRelatedRepository"></param>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.Movies.Edit(Movies.Domin.Param.MoviesParam)">
+            <summary>
+            更新
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:Movies.Domin.Movies.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesAndGroup">
+            <summary>
+            分组和影视信息关系表
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndGroup.Id">
+            <summary>
+            分组和影视信息关系id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndGroup.MoviesGroupId">
+            <summary>
+            分组id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndGroup.MoviesId">
+            <summary>
+            影视相关id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndGroup.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndGroup.Movies">
+            <summary>
+            影视信息
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesAndLine">
+            <summary>
+            影视和线路表
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndLine.Id">
+            <summary>
+            影视和线路表id 
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndLine.MoviesId">
+            <summary>
+            影视id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndLine.MoviesLineId">
+            <summary>
+            线路id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndLine.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesAndLine.Movies">
+            <summary>
+            影视相关信息
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesArea">
+            <summary>
+            地域
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesArea.AreaName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesArea.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesBanner">
+            <summary>
+            轮播图
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesBanner.Id">
+            <summary>
+            轮播id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesBanner.Name">
+            <summary>
+            轮播图名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesBanner.Banner">
+            <summary>
+            轮播图
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesBanner.Introduction">
+            <summary>
+            轮播简介
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesBanner.MoviesId">
+            <summary>
+            影视id
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesDramaSeries">
+            <summary>
+            剧集
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesDramaSeries.Id">
+            <summary>
+            剧集id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesDramaSeries.DramaSeriesNum">
+            <summary>
+            集数（第几集）
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesDramaSeries.Url">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesDramaSeries.MoviesId">
+            <summary>
+            影视信息id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesDramaSeries.Movies">
+            <summary>
+            影视信息
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesIntroduction">
+            <summary>
+            影视简介
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.Id">
+            <summary>
+            简介id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.DirectorName">
+            <summary>
+            导演
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.ActorName">
+            <summary>
+            演员
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.IntroductionContent">
+            <summary>
+            简介内容
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesIntroduction.Movies">
+            <summary>
+            影视信息
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesLine">
+            <summary>
+            线路
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesLine.Url">
+            <summary>
+            线路路径
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesLine.MoviesRelatedId">
+            <summary>
+            影视信息id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesLine.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesLine.Movies">
+            <summary>
+            影视信息
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesReleaseTime">
+            <summary>
+            上映时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesReleaseTime.ReleaseYear">
+            <summary>
+            上映年份
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesReleaseTime.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Model.MoviesTag">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesTag.Id">
+            <summary>
+            标签id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesTag.Name">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesTag.MoviesGroupId">
+            <summary>
+            分组id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesTag.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Model.MoviesTag.MoviesGroup">
+            <summary>
+            分组
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.MoviesGroup">
+            <summary>
+            影视分组
+            </summary>
+            <summary>
+            分组
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.Id">
+            <summary>
+            影视分组id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.AccountId">
+            <summary>
+            账户id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.Name">
+            <summary>
+            影视分组名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.EditTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.IsDel">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.DelTime">
+            <summary>
+            删除时间
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.MoviesGroup.MoviesTag">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="M:Movies.Domin.MoviesGroup.Add(Movies.Domin.Param.MoviesGroupParam,Movies.Domin.Interface.IMoviesGroupRepository,System.String)">
+            <summary>
+            分组添加
+            </summary>
+            <param name="param"></param>
+            <param name="moviesGroupRepository"></param>
+            <param name="accountId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Domin.MoviesGroup.Edit(Movies.Domin.Param.MoviesGroupParam)">
+            <summary>
+            分组更新
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:Movies.Domin.MoviesGroup.Delete(System.String)">
+            <summary>
+            分组删除
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Movies.Domin.Param.MoviesAccountParam">
+            <summary>
+            用户前端传参
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesAccountParam.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesAccountParam.Account">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesAccountParam.Phone">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesAccountParam.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesAccountParam.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesGroupParam.Id">
+            <summary>
+            影视分组id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesGroupParam.MoviesGroupName">
+            <summary>
+            影视分组名称
+            </summary>
+        </member>
+        <member name="T:Movies.Domin.Param.MoviesParam">
+            <summary>
+            影视信息参数
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesParam.MoviesGroupId">
+            <summary>
+            影视分组Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesParam.MoviesId">
+            <summary>
+            影视信息Id
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesParam.MoviesName">
+            <summary>
+            电影/电视剧名称
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesParam.Image">
+            <summary>
+            头图
+            </summary>
+        </member>
+        <member name="P:Movies.Domin.Param.MoviesParam.Url">
+            <summary>
+            电影路径
+            </summary>
+        </member>
+        <member name="T:Movies.Infrastructure.UserAuthorization">
+            <summary>
+             授权自定义过滤
+            </summary>
+        </member>
+    </members>
+</doc>

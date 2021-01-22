@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies</name>
+    </assembly>
+    <members>
+        <member name="M:Movies.Controllers.MoviesGroupController.Get(System.String)">
+            <summary>
+            分组详情
+            </summary>
+            <param name="id">分组id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

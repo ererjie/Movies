@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies.Respository.Mysql</name>
+    </assembly>
+    <members>
+        <member name="T:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository">
+            <summary>
+            个人中心实现接口
+            </summary>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository.Add(Movies.Domin.AdminAccount)">
+            <summary>
+            添加个人信息
+            </summary>
+            <param name="adminAccount"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository.Edit(Movies.Domin.AdminAccount)">
+            <summary>
+            更新个人信息
+            </summary>
+            <param name="moviesAccount"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository.GetmoviesAccount(System.String)">
+            <summary>
+            得到个人信息详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository.SaveChanges">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository.GetQueryable">
+            <summary>
+            获取IQueryable的方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesAccountRepository.GetList(System.Linq.Expressions.Expression{System.Func{Movies.Domin.AdminAccount,System.Boolean}})">
+            <summary>
+            根据条件获取实体列表
+            </summary>
+            <param name="condition">条件</param>
+            <returns></returns>
+        </member>
+        <member name="T:Movies.Respository.Mysql.ImplementInterface.MoviesGroupRepository">
+            <summary>
+            分组实现类
+            </summary>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesGroupRepository.Add(Movies.Domin.MoviesGroup)">
+            <summary>
+            添加
+            </summary>
+            <param name="moviesGroup"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesGroupRepository.Edit(Movies.Domin.MoviesGroup)">
+            <summary>
+            更新
+            </summary>
+            <param name="moviesGroup"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesGroupRepository.GetList(System.Linq.Expressions.Expression{System.Func{Movies.Domin.MoviesGroup,System.Boolean}})">
+            <summary>
+            列表
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesGroupRepository.GetQueryable">
+            <summary>
+            详细
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesGroupRepository.SaveChanges">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesRepository.Add(Movies.Domin.Movies)">
+            <summary>
+            添加
+            </summary>
+            <param name="movies"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesRepository.Edit(Movies.Domin.Movies)">
+            <summary>
+            更新
+            </summary>
+            <param name="movies"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesRepository.GetList(System.Linq.Expressions.Expression{System.Func{Movies.Domin.Movies,System.Boolean}})">
+            <summary>
+            列表
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesRepository.GetQueryable">
+            <summary>
+            详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.ImplementInterface.MoviesRepository.SaveChanges">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="T:Movies.Respository.Mysql.Map.MoviesAndGroupMap">
+            <summary>
+            分组和影视信息关系表
+            </summary>
+        </member>
+        <member name="T:Movies.Respository.Mysql.Map.MoviesBannerMap">
+            <summary>
+            轮播
+            </summary>
+        </member>
+        <member name="M:Movies.Respository.Mysql.MoviesDbContext.Commit">
+            <summary>
+            实现基类接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.MoviesDbContext.SaveEntitiesAsync(System.Threading.CancellationToken)">
+            <summary>
+            实现基类接口（暂时没有用到）
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Movies.Respository.Mysql.MoviesDbContext.#ctor(Movies.Infrastructure.AppConfig)">
+            <summary>
+            有参构造函数（连接数据库）
+            </summary>
+            <param name="appConfig"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.MoviesDbContext.#ctor">
+            <summary>
+            部分注入不进去然后就进入这个无参构造函数，使能连接到数据库
+            </summary>
+        </member>
+        <member name="M:Movies.Respository.Mysql.MoviesDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            连接数据库
+            </summary>
+            <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:Movies.Respository.Mysql.MoviesDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            映射数据库map
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:Movies.Infrastructure.QueryExtension.GetList``2(Movies.Respository.Mysql.MoviesDbContext,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            得到实体列表
+            </summary>
+            <param name="dbContext"></param>
+            <param name="exp">条件</param>
+            <typeparam name="TEntity"></typeparam>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
